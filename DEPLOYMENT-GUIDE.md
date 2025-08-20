@@ -9,6 +9,10 @@ This guide provides step-by-step instructions to deploy the Flask app to a k3d K
 - Git installed
 - Internet connection
 
+## Fixes & Additions:
+
+- Make sure python venv is installed: `sudo apt install python3.11-venv`
+
 ## Step 1: Clone Repository and Setup Environment
 
 ```bash
@@ -39,6 +43,9 @@ python3 --version
 ```bash
 # Navigate to app directory
 cd app
+
+python3 -m venv k3denv
+source k3denv/bin/activate.fish
 
 # Install dependencies
 pip3 install -r requirements.txt
