@@ -37,23 +37,6 @@ newgrp docker  # IMPORTANT: Refresh permissions
 ```
 
 ### Manual Setup
-n### Python Virtual Environment (Optional)
-```bash
-# Create virtual environment for local testing
-cd app
-python3 -m venv k3denv
-source k3denv/bin/activate
-pip install -r requirements.txt
-
-# Test locally
-python app.py
-# In another terminal: curl http://localhost:8080
-
-# Deactivate when done
-deactivate
-cd ..
-```
-
 ```bash
 sudo apt update
 sudo apt install -y docker.io git python3 python3-pip
